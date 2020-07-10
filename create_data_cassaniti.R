@@ -11,7 +11,7 @@
 #   -   +   -   0
 #   -   -   +   1
 #   -   -   -   41
-28+4+36
+
 
 setwd("C:\\Users\\admin\\switchdrive\\Cost Harmony\\analysis\\letter")
 
