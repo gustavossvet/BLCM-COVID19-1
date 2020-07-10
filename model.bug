@@ -3,7 +3,7 @@
 ################################################################################################
 
 #######################################################
-##Definition of the variables in the model
+## Definition of the variables in the model
 #######################################################
 
 var p[N], q[N,8], pr[N], L[N],checks[N,16]; 
@@ -108,7 +108,7 @@ p[i] <- L[i] / 1;## divided by a constant just to ensure all p's <1
  
 #######################################################
 ## Definition of model priors which should be modified for sensitivity analysis.
-## Assuming a uniform distribution for the covariance terms
+## Assuming a uniform distribution for the covariance terms.
 ## Assuming a beta distribution for prevalence and test accuracy estimates.
 ## Parameters of the beta prior distribution obtained by Betabuster
 ## https://betabuster.software.informer.com/1.0/
@@ -116,15 +116,15 @@ p[i] <- L[i] / 1;## divided by a constant just to ensure all p's <1
  
   covs12 <- 0;
   covs13 <- 0;
-  covs23 ~ dunif(-1,1);
+  covs23 ~ dunif(-1,1); # flat, uninformative
   covc12 <- 0;
   covc13 <- 0;
   covc23 <- 0;
   
   prc ~ dbeta(19.1093,13.0729);      # Prev 95%; >0.45, m 0.6
   c1  ~ dbeta(21.201,2.0633);        # SP RT-PCR 95%; >0.8, m 0.95
-  c2  ~ dbeta(1,1);                  # SP IGG
-  c3  ~ dbeta(1,1);                  # SP IGM
+  c2  ~ dbeta(1,1);                  # SP IGG flat, uninformative
+  c3  ~ dbeta(1,1);                  # SP IGM flat, uninformative
   s1  ~ dbeta(3.0476,1.5119);        # SE RT-PCR 95%; >0.3, m 0.8
   s2  ~ dbeta(4.8416,3.5611);        # SE IGG 95%; >0.3, m 0.6
   s3  ~ dbeta(4.8416,3.5611);        # SE IGM 95%; >0.3, m 0.6
