@@ -127,7 +127,7 @@ p[i] <- L[i] / 1;## divided by a constant just to ensure all p's <1
   c3  ~ dbeta(1,1);                  # SP IGM
   s1  ~ dbeta(3.0476,1.5119);        # SE RT-PCR 95%; >0.3, m 0.8
   s2  ~ dbeta(4.8416,3.5611);        # SE IGG 95%; >0.3, m 0.6
-  s3  ~ dbeta(4.8416,3.5611);        # SE IGG 95%; >0.3, m 0.6
+  s3  ~ dbeta(4.8416,3.5611);        # SE IGM 95%; >0.3, m 0.6
   
   logL<-sum(log(p[1:N])); 
   
