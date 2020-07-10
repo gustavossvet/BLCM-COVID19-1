@@ -11,8 +11,8 @@
 #   -   +   -   0
 #   -   -   +   1
 #   -   -   -   41
-28+4+36
 
+# set working directory
 setwd("C:\\Users\\admin\\switchdrive\\Cost Harmony\\analysis\\letter")
 
 # create a data set, save it in a matrix
