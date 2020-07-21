@@ -1,6 +1,5 @@
 ### data from Cassaniti et al. 2020 ##
 ### DOI: 10.1002/jmv.25800
-### 
 
 #  PCR IGG IGM  N
 #   +   +   +   28
@@ -11,9 +10,6 @@
 #   -   +   -   0
 #   -   -   +   1
 #   -   -   -   41
-
-
-setwd("C:\\Users\\admin\\switchdrive\\Cost Harmony\\analysis\\letter")
 
 # create a data set, save it in a matrix
 PCR <- c(rep(1, 68), rep(0, 42))

@@ -6,7 +6,7 @@ In this project further details about a Bayesian latent class model analysis (BL
 Cassaniti et al. 2020 (DOI: 10.1002/jmv.25800) are presented, allowing to reproduce the analysis.
 
 # Procedure
-Install actual versions of R, Rstudio and the package 'runjags'. Save the files 'model.bug' and 'runjags.R' in the same folder and set the working directory. Run the code in the 'run.jags.R' file.
+Install actual versions of R, Rstudio and the package 'runjags'. Download or clone the repository. Run the code in the 'run.jags.R' file.
 
 # Backgound
 The code provided allows to fit a BLCM model in JAGS for three COVID-19 tests (RT-PCR, IgG and IgM) to the data from Cassaniti et al. (2020). JAGS (Just Another Gibbs Sampler) is a program for the analysis of Bayesian hierarchical models using Markov Chain Monte Carlo (MCMC) simulation. JAGS contains an algorithm to sample from the posterior distribution, which in a Bayesian framework, results from the combination of prior information and the data. 
