@@ -13,7 +13,7 @@ The code provided allows to fit a BLCM model in JAGS for three COVID-19 tests (R
 Whereas - according to the Hui-Walter paradigm - a model with three tests and one population is identifiable, non-identifiabiliy becomes an issue when potential conditional test dependencies are also included in the model. Since IgG and IgM rely on the same biological principle, at least a conditional dependency between these two tests should be included. 
 The choice of the priors was based on a previous analysis (preprint: DOI:
 10.21203/rs.3.rs-33243/v1) and beta priors were obtained using the software Betabuster (https://betabuster.software.informer.com/1.0/). 
-In brief we assumed, that the specificity of Rt-PCR has a median of 99%, with the 5th percentile being at 98%. This leads to a prior beta (426.36,4.64). For the specificities of IgG and Igm, we assumed that they have a median of 95%, with a 5th percentile at 95%.
+In brief we assumed, that the specificity of RT-PCR has a median of 99%, with the 5th percentile being at 98%. This leads to a prior beta (426.36,4.64). For the specificities of IgG and Igm, we assumed that they have a median of 95%, with a 5th percentile at 95%.
 To assess convergence, three different chains starting from different points were run after an adaptation phase of 1000 iterations and a burnin of 10000. The sample comprises 1000000 iterations from each chain. The trace plots were checked visually for good mixing. To monitor convergence by the Gelman-Rubin approach, the potential scale reduction factor (psrf), was assessed. Psrf for each posterior parameter is assumed to decline to 1 as the number of iterations approaches infinity.
 
 # Results and limitations
